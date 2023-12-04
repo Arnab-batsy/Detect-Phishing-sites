@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* variables */
 :root {
     --background: #f5f6fa;
@@ -15,17 +20,19 @@
     font: 1rem "PT Sans", sans-serif;
 }
 
+
+
 html,
 body,
 .container {
     height: 100%;
 }
 
-a {
+.below_search {
     color: inherit;
 }
 
-a:hover {
+.below_search:hover {
     color: var(--button-bg-color);
 }
 
@@ -35,6 +42,10 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.form{
+    margin-bottom: 15px;
 }
 
 .uppercase {
@@ -82,3 +93,41 @@ a:hover {
     outline: 0;
     padding: 22px 18px;
 }
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7f8ff4;
+  }
+  
+  li {
+    float: right;
+    font-size: 18px;
+  }
+  
+  li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  #name{
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #f5f6fa;
+    color: #7f8ff4;
+  }
+
